@@ -36,15 +36,15 @@ const Header = () => {
           <ul className="navbar-list">
 
             <li className="navbar-item">
-              <a href="#" onClick={toggleNav} className="navbar-link title-md">Home</a>
+              <a href="#" onClick={isNavActive ? toggleNav : ''} className="navbar-link title-md">Home</a>
             </li>
 
             <li className="navbar-item">
-              <a href="#services" onClick={toggleNav} className="navbar-link title-md">Services</a>
+              <a href="#services" onClick={isNavActive ? toggleNav : ''}  className="navbar-link title-md">Services</a>
             </li>
 
             <li className="navbar-item">
-              <a href="#about" onClick={toggleNav} className="navbar-link title-md">About Us</a>
+              <a href="#about" onClick={isNavActive ? toggleNav : ''} className="navbar-link title-md">About Us</a>
             </li>
 
           </ul>
