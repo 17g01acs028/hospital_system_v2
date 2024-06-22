@@ -22,9 +22,10 @@ const Header = () => {
 
           <div className="navbar-top">
 
-            <a href="#" className="logo">
-              <img src={Logo} width="136" height="46" alt="Hospital home" />
-            </a>
+          <a href="#" className="logo">
+          <img src={Logo} width="70" height="40" alt="Hospital home" />
+          <h2>UzimaPal</h2>
+          </a>
 
             <button className="nav-close-btn" onClick={toggleNav} aria-label="close menu" data-nav-toggler>
               <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -35,15 +36,15 @@ const Header = () => {
           <ul className="navbar-list">
 
             <li className="navbar-item">
-              <a href="#" className="navbar-link title-md">Home</a>
+              <a href="#" onClick={toggleNav} className="navbar-link title-md">Home</a>
             </li>
 
             <li className="navbar-item">
-              <a href="#services" className="navbar-link title-md">Services</a>
+              <a href="#services" onClick={toggleNav} className="navbar-link title-md">Services</a>
             </li>
 
             <li className="navbar-item">
-              <a href="#about" className="navbar-link title-md">About Us</a>
+              <a href="#about" onClick={toggleNav} className="navbar-link title-md">About Us</a>
             </li>
 
           </ul>
@@ -90,11 +91,11 @@ const Header = () => {
 
        <div className="header_btn">
         <a href="#" className="btn has-before title-md">Login</a>
-          or
-          <a href="#" className="btn has-before title-md">Signup</a>
+        or
+        <a href="#" className="btn has-before title-md">Signup</a>
        </div>
        
-        <div className={`overlay ${isNavActive ? 'active' : ''}`} data-nav-toggler data-overlay></div>
+        <div className={`overlay ${isNavActive ? 'active' : ''}`} onClick={toggleNav} data-nav-toggler data-overlay></div>
 
       </div>
     </header>

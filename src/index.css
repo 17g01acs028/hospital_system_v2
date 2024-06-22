@@ -328,8 +328,9 @@ html {
   #HEADER
 \*-----------------------------------*/
 
-.header .btn { display: none; }
-
+.header .header_btn{
+  display: none; 
+}
 .header {
   position: absolute;
   top: 0;
@@ -904,7 +905,9 @@ html {
    * HEADER
    */
 
-  .header .btn { display: block; }
+  .header .header_btn{
+    display: flex; 
+  }
 
   .nav-open-btn { margin-inline-start: auto; }
 
