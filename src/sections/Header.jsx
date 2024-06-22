@@ -23,7 +23,7 @@ const Header = () => {
           <div className="navbar-top">
 
           <a href="#" className="logo">
-          <img src={Logo} width="70" height="40" alt="Hospital home" />
+          <img src={Logo} width="90" height="40" alt="Hospital home" />
           <h2>UzimaPal</h2>
           </a>
 
