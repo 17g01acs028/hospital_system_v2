@@ -14,7 +14,8 @@ const Header = () => {
       <div className="container">
 
         <a href="#" className="logo">
-          <img src={Logo} width="136" height="40" alt="Hospital home" />
+          <img src={Logo} width="70" height="40" alt="Hospital home" />
+          <h2>UzimaPal</h2>
         </a>
 
         <nav className={`navbar ${isNavActive ? 'active' : ''}`} data-navbar>
@@ -38,19 +39,11 @@ const Header = () => {
             </li>
 
             <li className="navbar-item">
-              <a href="#" className="navbar-link title-md">Doctors</a>
+              <a href="#services" className="navbar-link title-md">Services</a>
             </li>
 
             <li className="navbar-item">
-              <a href="#" className="navbar-link title-md">Services</a>
-            </li>
-
-            <li className="navbar-item">
-              <a href="#" className="navbar-link title-md">Blog</a>
-            </li>
-
-            <li className="navbar-item">
-              <a href="#" className="navbar-link title-md">Contact</a>
+              <a href="#about" className="navbar-link title-md">About Us</a>
             </li>
 
           </ul>
@@ -95,8 +88,12 @@ const Header = () => {
           <ion-icon name="menu-outline"></ion-icon>
         </button>
 
-        <a href="#" className="btn has-before title-md">Make Appointment</a>
-
+       <div className="header_btn">
+        <a href="#" className="btn has-before title-md">Login</a>
+          or
+          <a href="#" className="btn has-before title-md">Signup</a>
+       </div>
+       
         <div className={`overlay ${isNavActive ? 'active' : ''}`} data-nav-toggler data-overlay></div>
 
       </div>

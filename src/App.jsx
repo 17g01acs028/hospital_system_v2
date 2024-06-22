@@ -35,8 +35,6 @@ function App() {
         <Hero/>
         <Services/>
         <About/>
-        <Listing/>
-        <Blog/>
       </article>
      </main>
      <Footer/>

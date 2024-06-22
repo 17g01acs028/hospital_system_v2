@@ -167,7 +167,7 @@ html {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 16px; }
+.container { padding-inline: 8px; }
 
 .headline-lg {
   font-size: var(--headline-lg);
@@ -224,12 +224,20 @@ html {
   background-color: var(--verdigris);
   color: var(--white);
   font-weight: var(--fw-700);
-  padding: 12px 36px;
+  padding: 8px 24px;
   display: flex;
   align-items: center;
   gap: 8px;
   border-radius: var(--radius-6);
   overflow: hidden;
+}
+.header_btn {
+  color: white;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .btn::before {
@@ -335,6 +343,7 @@ html {
   position: fixed;
   background-color: var(--rich-black-fogra-29);
   animation: headerActive 0.5s ease forwards;
+  padding: 5px;
 }
 
 @keyframes headerActive {
@@ -343,6 +352,12 @@ html {
 }
 
 .header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .logo{
+  color: var(--alice-blue);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -728,7 +743,11 @@ html {
   border-radius: var(--radius-6);
 }
 
-.footer .logo { margin-block-end: 20px; }
+.footer .logo { 
+  margin-block-end: 20px; 
+  display: flex;
+  align-items: center;
+}
 
 .contact-item {
   display: flex;

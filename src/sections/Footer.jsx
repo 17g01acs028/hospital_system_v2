@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Footer = () => {
     const footerBg ={
         backgroundImage: 'url(images/footer-bg.png)'
@@ -14,7 +15,7 @@ const Footer = () => {
         <div className="footer-brand" data-reveal="bottom">
 
           <a href="#" className="logo">
-            <img src="./assets/images/logo.svg" width="136" height="46" loading="lazy" alt="Doclab home"/>
+            <img src="logo.png" width="70" height="46" loading="lazy" alt="Doclab home"/><h2>UzimaPal</h2>
           </a>
 
           <ul className="contact-list has-after">
