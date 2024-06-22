@@ -164,7 +164,7 @@ const Footer = () => {
       <div className="footer-bottom">
 
         <p className="text copyright">
-          &copy; Doclab 2022 | All Rights Reserved by codewithsadee
+          &copy; UzimaPal {new Date().getFullYear()} | All Rights Reserved by UzimaPal
         </p>
 
         <ul className="social-list">
