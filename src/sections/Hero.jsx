@@ -6,50 +6,55 @@ const Hero = () => {
       };
   return (
     <section className="section hero" style={heroStyle} aria-label="home">
-        <div className="container">
+      <div className="container">
+        <div className="hero-content">
+          <p className="hero-subtitle has-before" data-reveal="left">
+            Welcome to Uzyma
+          </p>
 
-          <div className="hero-content">
+          <h1 className="headline-lg hero-title" data-reveal="left">
+            Empowering Healthcare through Community and Connection
+          </h1>
 
-            <p className="hero-subtitle has-before" data-reveal="left">Welcome To Uzima Pal</p>
+          <div className="hero-card" data-reveal="left">
+            <p className="title-lg card-text">
+              Search doctors. clinics. hospitals. etc.
+            </p>
 
-            <h1 className="headline-lg hero-title" data-reveal="left">
-            The Best Medical Record Platform.
-            </h1>
+            <div className="wrapper">
+              <div className="input-wrapper title-lg">
+                <input
+                  type="text"
+                  name="location"
+                  placeholder="Locations"
+                  className="input-field"
+                />
 
-            <div className="hero-card" data-reveal="left">
-
-              <p className="title-lg card-text">
-                Search doctors. clinics. hospitals. etc.
-              </p>
-
-              <div className="wrapper">
-
-                <div className="input-wrapper title-lg">
-                  <input type="text" name="location" placeholder="Locations" className="input-field"/>
-
-                  <ion-icon name="location"></ion-icon>
-                </div>
-
-                <button className="btn has-before">
-                  <ion-icon name="search"></ion-icon>
-
-                  <span className="span title-md nowrap">Find Now</span>
-                </button>
-
+                <ion-icon name="location"></ion-icon>
               </div>
 
+              <button className="btn has-before">
+                <ion-icon name="search"></ion-icon>
+
+                <span className="span title-md nowrap">Find Now</span>
+              </button>
             </div>
-
           </div>
-
-          <figure className="hero-banner" data-reveal="right">
-            <img src={HeroBanner} width="590" height="517" loading="eager" alt="hero banner"
-              className="w-100"/>
-          </figure>
-
         </div>
-      </section>
-  )
+
+        <figure className="hero-banner" data-reveal="right">
+          <img
+            src={HeroBanner}
+            width="590"
+            height="517"
+            loading="eager"
+            alt="hero banner"
+            className="w-100"
+          />
+        </figure>
+      </div>
+    </section>
+  );
 }
 
 export default Hero

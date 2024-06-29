@@ -16,11 +16,11 @@ function App() {
       setIsLoading(false);
     };
 
-    window.addEventListener('load', handleLoad);
-    
+    window.addEventListener("load", handleLoad);
+
     // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener('load', handleLoad);
+      window.removeEventListener("load", handleLoad);
     };
   }, []);
   useHeadView();
@@ -29,19 +29,17 @@ function App() {
       <div className={`preloader ${isLoading ? "" : "loaded"}`} data-preloader>
         <div className="circle"></div>
       </div>
-     <Header/>
-     <main>
-      <article>
-        <Hero/>
-        <Services/>
-        <About/>
-      </article>
-     </main>
-     <Footer/>
+      <Header />
+      <main>
+        <article>
+          <Hero />
+          <Services />
+          <About />
+        </article>
+      </main>
+      <Footer />
     </div>
- 
-   
-  )
+  );
 }
 
 export default App

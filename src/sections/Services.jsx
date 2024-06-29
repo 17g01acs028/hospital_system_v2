@@ -5,26 +5,29 @@ import icon_3 from "../assets/images/icon-3.png"
 import icon_4 from "../assets/images/icon-4.png"
 import Service from '../components/services/Service'
 
-const Service_list = [{
-  title: "Record Keeping",
-  description: "Safe and robust system for maintaining patient records.",
-  src: icon_1
-},
-{
-  title: "Visit Reminder",
-  description: "Automated reminders for clinic visits and doctor appointments.",
-  src: icon_2
-},
-{
-  title: "AI Advisor",
-  description: "AI-powered advisor providing insights from previous records.",
-  src: icon_3
-},
-{
-  title: "Clinics & Doctors",
-  description: "Comprehensive database of clinics and doctors for easy access.",
-  src: icon_4
-}
+const Service_list = [
+  {
+    title: "Record Keeping",
+    description: "Safe and robust system for maintaining patient records.",
+    src: icon_1,
+  },
+  {
+    title: "Visit Reminder",
+    description:
+      "Automated reminders for clinic visits and doctor appointments.",
+    src: icon_2,
+  },
+  {
+    title: "AI assistant",
+    description: "AI-powered advisor providing insights from previous records.",
+    src: icon_3,
+  },
+  {
+    title: "Clinics & Doctors",
+    description:
+      "Comprehensive database of clinics and doctors for easy access.",
+    src: icon_4,
+  },
 ];
 const Services = () => {
   return (
