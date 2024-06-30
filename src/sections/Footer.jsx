@@ -19,7 +19,7 @@ const Footer = () => {
                   loading="lazy"
                   alt="Doclab home"
                 />
-                <h2>UzimaPal</h2>
+                <h2>Uzyma</h2>
               </a>
 
               <ul className="contact-list has-after">
